@@ -5,7 +5,7 @@ HW4: Contribution
 
 ## Tool Overview
 This tool has been created to disrupt the blue team's ability to fix their services by causing keyboard issues.
-There are two features to this tool, key binding and key scrambling.
+There are three features to this tool, key binding, key scrambling, and command scrambling.
 
 ### Feature 1 - Key Binding
 The key binding feature currently binds the "Ctrl-d" key sequence to the s key and allows it to persist.
@@ -42,3 +42,4 @@ To change the key scrambling file, please utilize this guide:
 To utilize the script, utilize the following command:
 - ``source ./scramble.sh``
 
+### Feature 3 - Command Scrambling
