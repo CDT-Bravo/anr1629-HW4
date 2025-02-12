@@ -47,8 +47,8 @@ The command scrambling feature swaps 2 linux binaries. So for example, the ls bi
 To change the command scrambling file, please utilize this guide:
 - if you wish to add two commands to be swapped, add the following before mv and cp being swapped:
   - ``mv /bin/<command> /bin/<command>-tmp``
-  - ``mv /bin/command2> /bin/<command>``
-  - ``mv /bin/<command-tmp> /bin/command2``
+  - ``mv /bin/<command2> /bin/<command>``
+  - ``mv /bin/<command>-tmp /bin/<command2>``
  
 Refer to the command.sh file to view examples
 
