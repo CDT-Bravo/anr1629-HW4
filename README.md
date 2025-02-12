@@ -14,9 +14,9 @@ Additionally, the binding has been made to persist by adding it to the ~/.bashrc
 
 To change the key binding to something else, please utilize this guide:
 
-  - command format: bind '"\<key-to-bind-to\>":"\<desired-key-sequence\>"
-    - \<key-to-bind-to\> - by default, this is s
-    - \<desired-key-sequence\> - by default, this is ctrl+d
+  - command format: ``bind '"<key-to-bind-to>":"<desired-key-sequence>"``
+    - ``<key-to-bind-to>`` - by default, this is s
+    - ``<desired-key-sequence>`` - by default, this is ctrl+d
     
   - key format tips:
     - if you desire to use the "ctrl" key, please us \C- to represent this.
@@ -24,6 +24,21 @@ To change the key binding to something else, please utilize this guide:
       (for example, the enter key corresponds to ^M) (this means you should use \C-M)
 
 To utilize the script, utilize the following command:
-- source ./bind.sh
+- ``source ./bind.sh``
 
 ### Feature 2 - Key Scrambling
+The key scrambling feature utilizes the bind linux function to do large scale key mapping to scramble the keyboard. 
+Since binding is being used, it is important to not map pairs
+- for example, mapping b to d and d to b will produce an error as it loops back and forth.
+
+As such, while all letters of the alphabet and frequently used characters have been listed in the code, only half are in use.
+
+To change the key scrambling file, please utilize this guide:
+- If you wish to change the keys being binded to, please comment out/uncomment the desired rows.
+- If you wish to change one of the key sequences being binded, please find the correct key, change the desired-key-sequence, and confirm that the key does not have a bind to it:
+  - Example: if you want to map the letter p to the a key instead of having the letter i mapped to the a key, update line 10 from: ``bind '"a":"i"'`` to the following: ``bind '"a":"p"'`` and comment out line 29 to remove the "p" key binding.
+- Please see Feature 1 for details on the bind command.
+
+To utilize the script, utilize the following command:
+- ``source ./scramble.sh``
+
