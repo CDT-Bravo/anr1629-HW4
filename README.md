@@ -43,12 +43,12 @@ To utilize the script, utilize the following command:
 - ``source ./scramble.sh``
 
 ### Feature 3 - Command Scrambling
-The command scrmbling feature swaps 2 linux binaries. So for example, the ls binary and the more binary are swapped. So ``ls`` outputs what more would and ``more`` outputs what ls would.
+The command scrambling feature swaps 2 linux binaries. So for example, the ls binary and the more binary are swapped. So ``ls`` outputs what more would and ``more`` outputs what ls would.
 To change the command scrambling file, please utilize this guide:
 - if you wish to add two commands to be swapped, add the following before mv and cp being swapped:
-  - mv /bin/<command> /bin/<command>-tmp
-  - mv /bin/command2> /bin/<command>
-  - mv /bin/<command-tmp> /bin/command2
+  - ``mv /bin/<command> /bin/<command>-tmp``
+  - ``mv /bin/command2> /bin/<command>``
+  - ``mv /bin/<command-tmp> /bin/command2``
  
 Refer to the command.sh file to view examples
 
