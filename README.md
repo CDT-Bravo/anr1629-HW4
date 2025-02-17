@@ -56,7 +56,12 @@ To utilize the script, utilize the following command:
 - ``source ./command.sh``
 
 
-
+## Ansible Scripts
+To run the scripts on a remote host, three ansible playbooks have been provided: 
+- scramble-install.yml will run scramble.sh
+- bind-install.yml will run bind.sh
+- command-scramble.yml will run command.sh
+ Please review the ansible-readme.txt for instructions on how to update the files accordingly. 
 
 
 
