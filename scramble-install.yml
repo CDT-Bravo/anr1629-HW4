@@ -1,0 +1,18 @@
+---
+#############################
+# Author: Alyssa Rios       #
+# Email: anr1629@rit.edu    #
+# Date: 17 February 2025     #
+#############################
+-  name: Scramble Tool Execution
+   hosts: linux #the ip address of the target should be under the target category in the inventory file.
+   become: yes #performs actions as elevated privileges user
+   tasks:
+   # This first task installs the mysql-server package onto the target if it is not already 
+   # and performs an upgrade on the system if available
+  -  name: Run scramble.sh file on target
+     ansible.builtin.script:
+       cmd: /home/ansible/temp/scramble.sh # update to path on local host
+
+         
+
